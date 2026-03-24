@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Bandaru Adarsh – AI & ML Enthusiast, Full Stack Developer. An interactive OS-style portfolio." />
+    <meta name="author" content="Bandaru Adarsh" />
+    <title>AdarshOS | Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+
+    <!-- ═══════════════ BOOT SCREEN ═══════════════ -->
+    <div class="boot-screen" id="bootScreen">
+        <div class="boot-logo">Adarsh<span>OS</span></div>
+        <div class="boot-bar"><div class="boot-bar-fill"></div></div>
+        <div class="boot-text">Loading system...</div>
+    </div>
+
+    <!-- ═══════════════ MESH GRADIENT BACKGROUND ═══════════════ -->
+    <div class="mesh-bg">
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+    <div class="dot-grid"></div>
+
+    <!-- ═══════════════ OS DESKTOP ═══════════════ -->
+    <main class="os-desktop" id="osDesktop">
+
+        <!-- ──── HERO ──── -->
+        <section class="hero-desktop app-section" id="home">
+
+            <!-- Top status bar widgets -->
+            <div class="hero-widgets">
+                <div class="hero-widget">
+                    <span class="widget-dot"></span>
+                    B.Tech CSE (AI &amp; ML) · LPU
+                </div>
+                <div class="hero-widget">
+                    <i class="fas fa-map-marker-alt" style="color:var(--rose);font-size:.7rem;"></i>
+                    Punjab, India
+                </div>
+                <div class="hero-widget">
+                    <i class="fas fa-star" style="color:var(--gold);font-size:.7rem;"></i>
+                    CGPA: 7.39
+                </div>
+            </div>
+
+            <h1 class="hero-name">
+                <div class="hero-name-line1">Bandaru</div>
+                <div class="hero-name-line2">Adarsh</div>
+            </h1>
+            <div class="hero-glow-line"></div>
+
+            <div class="hero-role">
+                <span id="typedRole"></span><span class="cursor">|</span>
+            </div>
+
+            <p class="hero-desc">
+                Building intelligent solutions using <strong style="color:var(--coral);">AI</strong>, machine learning,
+                and modern web technologies. Passionate about solving real-world problems.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i> View Projects
+                </a>
+                <a href="https://github.com/Adarshbandaru" target="_blank" rel="noopener" class="btn btn-glass">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+                <a href="https://www.linkedin.com/in/adarsh-bandaru" target="_blank" rel="noopener"
+                    class="btn btn-glass">
+                    <i class="fab fa-linkedin"></i> LinkedIn
+                </a>
+                <a href="public/resume.pdf" download="Bandaru_Adarsh_Resume.pdf" class="btn btn-outline"
+                    id="resumeBtn">
+                    <i class="fas fa-download"></i> Resume
+                </a>
+            </div>
+
+            <div class="hero-scroll-hint">
+                <span>Scroll Down</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- ──── ABOUT ──── -->
+        <section class="app-section" id="about">
+            <div class="app-window" data-reveal>
+                <div class="win-titlebar">
+                    <div class="win-dots"><div class="win-dot red"></div><div class="win-dot yellow"></div><div class="win-dot green"></div></div>
+                    <div class="win-title">system_info.app — About Me</div>
+                </div>
+                <div class="win-body">
+                    <div class="section-label">GET TO KNOW ME</div>
+                    <h2 class="section-heading">About <span>Me</span></h2>
+                    <br />
+                    <div class="about-layout">
+                        <div class="about-avatar-wrap">
+                            <div class="about-avatar">
+                                <div class="about-avatar-ring"></div>
+                                <img src="public/profile.jpg" alt="Bandaru Adarsh" class="about-avatar-img" />
+                            </div>
+                        </div>
+                        <div class="about-text">
+                            <p>Hey there! I'm <strong>Bandaru Adarsh</strong>, a passionate Computer Science student at
+                                Lovely Professional University, specializing in Artificial Intelligence and Machine Learning.</p>
+                            <p>I thrive at the intersection of <span class="about-highlight">AI research</span> and
+                                <span class="about-highlight">full-stack development</span>. I love engineering full-featured applications that aren't just visually stunning, but also highly scalable, secure, and data-driven under the hood.</p>
+                            <p>With a strong foundation in <span class="about-highlight">Data Structures & Algorithms</span> (100+ problems solved) and hands-on experience in machine learning and modern web technologies (React, Node.js), I bring strong debugging skills and logical reasoning to every challenge.</p>
+                            <p>When I'm not training ML models or optimizing REST APIs, you'll find me participating in hackathons like the Smart India Hackathon, collaborating closely with teams, and continuously exploring the frontiers of AI!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ──── SKILLS — macOS Folders ──── -->
+        <section class="app-section" id="skills">
+            <div class="app-window" data-reveal>
+                <div class="win-titlebar">
+                    <div class="win-dots"><div class="win-dot red"></div><div class="win-dot yellow"></div><div class="win-dot green"></div></div>
+                    <div class="win-title">finder.app — Skills</div>
+                </div>
+                <div class="win-body">
+                    <div class="section-label">WHAT I KNOW</div>
+                    <h2 class="section-heading">My <span>Skills</span></h2>
+                    <p style="color:var(--text-dim);font-size:.85rem;margin-top:8px;margin-bottom:32px;">Hover over any folder to see what's inside</p>
+                    <div class="skills-layout">
+                        <div class="folders-grid">
+                            <div class="mac-folder" data-folder="languages">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">5</span>
+                                </div>
+                                <span class="folder-label">Languages</span>
+                            </div>
+
+                            <div class="mac-folder" data-folder="frontend">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">5</span>
+                                </div>
+                                <span class="folder-label">Frontend</span>
+                            </div>
+
+                            <div class="mac-folder" data-folder="backend">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">3</span>
+                                </div>
+                                <span class="folder-label">Backend</span>
+                            </div>
+
+                            <div class="mac-folder" data-folder="database">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">2</span>
+                                </div>
+                                <span class="folder-label">Database</span>
+                            </div>
+
+                            <div class="mac-folder" data-folder="tools">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">7</span>
+                                </div>
+                                <span class="folder-label">Tools</span>
+                            </div>
+
+                            <div class="mac-folder" data-folder="concepts">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">5</span>
+                                </div>
+                                <span class="folder-label">CS Concepts</span>
+                            </div>
+
+                            <div class="mac-folder" data-folder="soft">
+                                <div class="folder-icon">
+                                    <div class="folder-shape"><div class="folder-tab"></div><div class="folder-body"></div></div>
+                                    <span class="folder-badge">4</span>
+                                </div>
+                                <span class="folder-label">Soft Skills</span>
+                            </div>
+                        </div>
+
+                        <!-- Preview Pane -->
+                        <div class="skills-preview-pane">
+                            <div class="preview-empty">
+                                <i class="fas fa-magic"></i>
+                                <p>Hover over a folder</p>
+                            </div>
+                            
+                            <div class="folder-preview-content" data-preview="languages">
+                                <h4><i class="fas fa-code"></i> Languages</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"> C</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"> C++</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"> Python</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"> Java</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS"> JavaScript</span>
+                                </div>
+                            </div>
+
+                            <div class="folder-preview-content" data-preview="frontend">
+                                <h4><i class="fab fa-react"></i> Frontend</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"> React.js</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next"> Next.js</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"> HTML5</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"> CSS3</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"> Tailwind CSS</span>
+                                </div>
+                            </div>
+
+                            <div class="folder-preview-content" data-preview="backend">
+                                <h4><i class="fab fa-node-js"></i> Backend</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node"> Node.js</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="Express"> Express.js</span>
+                                    <span class="skill-chip"><i class="fas fa-plug" style="font-size:20px;color:var(--coral)"></i> REST APIs</span>
+                                </div>
+                            </div>
+
+                            <div class="folder-preview-content" data-preview="database">
+                                <h4><i class="fas fa-database"></i> Database</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"> MongoDB</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase"> Firebase</span>
+                                </div>
+                            </div>
+
+                            <div class="folder-preview-content" data-preview="tools">
+                                <h4><i class="fas fa-tools"></i> Tools</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VSCode"> VS Code</span>
+                                    <span class="skill-chip"><i class="fas fa-terminal" style="font-size:18px;color:var(--coral)"></i> Cursor</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"> Git</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"> GitHub</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg" alt="Postman"> Postman</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma"> Figma</span>
+                                    <span class="skill-chip"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" alt="Canva"> Canva</span>
+                                </div>
+                            </div>
+
+                            <div class="folder-preview-content" data-preview="concepts">
+                                <h4><i class="fas fa-brain"></i> CS Concepts</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><i class="fas fa-server" style="font-size:18px;color:#6366f1"></i> DBMS</span>
+                                    <span class="skill-chip"><i class="fas fa-desktop" style="font-size:18px;color:#10b981"></i> OS</span>
+                                    <span class="skill-chip"><i class="fas fa-network-wired" style="font-size:18px;color:#38bdf8"></i> CN</span>
+                                    <span class="skill-chip"><i class="fas fa-cubes" style="font-size:18px;color:#f59e0b"></i> OOP</span>
+                                    <span class="skill-chip"><i class="fas fa-database" style="font-size:18px;color:#a78bfa"></i> SQL</span>
+                                </div>
+                            </div>
+
+                            <div class="folder-preview-content" data-preview="soft">
+                                <h4><i class="fas fa-handshake"></i> Soft Skills</h4>
+                                <div class="skill-chips">
+                                    <span class="skill-chip"><i class="fas fa-lightbulb" style="font-size:18px;color:#f59e0b"></i> Problem Solving</span>
+                                    <span class="skill-chip"><i class="fas fa-users" style="font-size:18px;color:#6366f1"></i> Team Collaboration</span>
+                                    <span class="skill-chip"><i class="fas fa-tasks" style="font-size:18px;color:#10b981"></i> Project Management</span>
+                                    <span class="skill-chip"><i class="fas fa-sync-alt" style="font-size:18px;color:#38bdf8"></i> Adaptability</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ──── PROJECTS ──── -->
+        <section class="app-section" id="projects">
+            <div class="app-window" data-reveal>
+                <div class="win-titlebar">
+                    <div class="win-dots"><div class="win-dot red"></div><div class="win-dot yellow"></div><div class="win-dot green"></div></div>
+                    <div class="win-title">gallery.app — Projects</div>
+                </div>
+                <div class="win-body">
+                    <div class="section-label">WHAT I'VE BUILT</div>
+                    <h2 class="section-heading">Featured <span>Projects</span></h2>
+                    <br />
+                    <div class="projects-grid">
+
+                        <!-- Project 1 — Sports Management System -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img src="public/projects/sports-management.png" alt="Sports Management System"
+                                    onerror="this.parentElement.classList.add('no-img')" />
+                                <div class="project-thumb-overlay"><i class="fas fa-expand-alt"></i></div>
+                                <div class="project-thumb-placeholder"><i class="fas fa-image"></i><span>sports-management.png</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-info-header">
+                                    <div class="project-icon-sm"><i class="fas fa-trophy"></i></div>
+                                    <div class="project-date">Aug 2025 — Sep 2025</div>
+                                </div>
+                                <h3 class="project-name">Sports Management System</h3>
+                                <p class="project-desc">Full-featured sports portal enabling event registration, team creation, participation tracking, and results updates. Implemented secure auth flows, profile editing, image upload, and admin dashboards with optimized React/Next.js components.</p>
+                                <div class="project-tech">
+                                    <span>React.js</span><span>Next.js</span><span>Node.js</span>
+                                    <span>Express.js</span><span>MongoDB</span><span>Tailwind</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://sportsmanagementsystem.netlify.app" target="_blank" rel="noopener" class="project-link demo"><i class="fas fa-play"></i> Demo</a>
+                                    <a href="https://github.com/Adarshbandaru/sports-hub-frontend" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Frontend</a>
+                                    <a href="https://github.com/Adarshbandaru/sports-hub-backend" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Backend</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2 — FairShare (Expense Splitter) -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img src="public/projects/fairshare.png" alt="FairShare"
+                                    onerror="this.parentElement.classList.add('no-img')" />
+                                <div class="project-thumb-overlay"><i class="fas fa-expand-alt"></i></div>
+                                <div class="project-thumb-placeholder"><i class="fas fa-image"></i><span>fairshare.png</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-info-header">
+                                    <div class="project-icon-sm" style="color:var(--sky);background:rgba(56,189,248,.1);border-color:rgba(56,189,248,.15);">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                    <div class="project-date">Jun 2025 — Jul 2025</div>
+                                </div>
+                                <h3 class="project-name">FairShare — Expense Splitter</h3>
+                                <p class="project-desc">Greedy algorithm-based settlement mechanism minimizing financial transactions. Achieved O(log n) update efficiency with priority queues and automated settlement suggestions using structured data models.</p>
+                                <div class="project-tech">
+                                    <span>C++</span><span>STL</span><span>Data Structures</span>
+                                    <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://fairhare.netlify.app/" target="_blank" rel="noopener" class="project-link demo"><i class="fas fa-play"></i> Demo</a>
+                                    <a href="https://github.com/Adarshbandaru/expenses-splitter" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3 — AI Injury Prevention -->
+                        <div class="project-card">
+                            <div class="project-thumb">
+                                <img src="public/projects/ai-injury.png" alt="AI Injury Prevention"
+                                    onerror="this.parentElement.classList.add('no-img')" />
+                                <div class="project-thumb-overlay"><i class="fas fa-expand-alt"></i></div>
+                                <div class="project-thumb-placeholder"><i class="fas fa-image"></i><span>ai-injury.png</span></div>
+                            </div>
+                            <div class="project-info">
+                                <div class="project-info-header">
+                                    <div class="project-icon-sm" style="color:var(--rose);background:rgba(244,63,94,.1);border-color:rgba(244,63,94,.15);">
+                                        <i class="fas fa-heartbeat"></i>
+                                    </div>
+                                    <div class="project-date">Apr 2025</div>
+                                </div>
+                                <h3 class="project-name">AI Injury Prevention Advisor</h3>
+                                <p class="project-desc">Built ML models estimating injury risk by analyzing biometric data and workout patterns. Compared Random Forest, Logistic Regression, and Gradient Boosting with interactive dashboards for visualizing predictions.</p>
+                                <div class="project-tech">
+                                    <span>Python</span><span>Pandas</span><span>NumPy</span>
+                                    <span>Scikit-learn</span><span>Matplotlib</span><span>Seaborn</span>
+                                </div>
+                                <div class="project-actions">
+                                    <a href="https://github.com/Adarshbandaru/AI-Driven-System-For-predictive-Injury-Risk" target="_blank" rel="noopener" class="project-link"><i class="fab fa-github"></i> Source Code</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ──── ACHIEVEMENTS & CERTIFICATIONS ──── -->
+        <section class="app-section" id="achievements">
+            <div class="app-window" data-reveal>
+                <div class="win-titlebar">
+                    <div class="win-dots"><div class="win-dot red"></div><div class="win-dot yellow"></div><div class="win-dot green"></div></div>
+                    <div class="win-title">awards.app — Achievements & Certifications</div>
+                </div>
+                <div class="win-body">
+                    <div class="section-label">MILESTONES</div>
+                    <h2 class="section-heading">My <span>Achievements</span></h2>
+                    
+                    <div class="achievements-list">
+                        <div class="ach-list-item">
+                            <div class="ach-list-icon emerald"><i class="fas fa-trophy"></i></div>
+                            <div class="ach-list-content">
+                                <h4>Participated in Hackathon</h4>
+                                <span>Mar 2024</span>
+                            </div>
+                        </div>
+                        <div class="ach-list-item">
+                            <div class="ach-list-icon sky"><i class="fas fa-code"></i></div>
+                            <div class="ach-list-content">
+                                <h4>Solved 100+ DSA problems on LeetCode & GeeksforGeeks</h4>
+                            </div>
+                        </div>
+                        <div class="ach-list-item">
+                            <div class="ach-list-icon rose"><i class="fas fa-bug"></i></div>
+                            <div class="ach-list-content">
+                                <h4>Strong debugging skills and logical reasoning capability</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div style="height: 48px;"></div>
+
+                    <div class="section-label">CREDENTIALS</div>
+                    <h2 class="section-heading">My <span>Certifications</span></h2>
+                    <p style="color:var(--text-dim);font-size:.85rem;margin-top:8px;margin-bottom:24px;">Swipe or scroll to explore. Click on any certificate to view it.</p>
+
+                    <div class="cert-carousel">
+                        <!-- Certifications -->
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/screenshot-cert.png')">
+                            <div class="ach-icon sky"><i class="fas fa-sitemap"></i></div>
+                            <div>
+                                <h4>Basics of Data Structures and Algorithms</h4>
+                                <p>Lovely Professional University</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Jul 2025</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('https://udemy-certificate.s3.amazonaws.com/pdf/UC-cd78dfad-b94b-4216-a543-a5cb1adc1815.pdf')">
+                            <div class="ach-icon orange"><i class="fab fa-python"></i></div>
+                            <div>
+                                <h4>100 Days of Code: The Complete Python Pro Bootcamp</h4>
+                                <p>Udemy</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Feb 2024</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/nptel-privacy.png')">
+                            <div class="ach-icon indigo"><i class="fas fa-shield-alt"></i></div>
+                            <div>
+                                <h4>Privacy & Security in Online Social Media</h4>
+                                <p>NPTEL (MOE, Govt. of India)</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Nov 2025</span>
+                            </div>
+                        </div>
+
+                        <!-- New Certificates -->
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/freecodecamp.png')">
+                            <div class="ach-icon emerald"><i class="fab fa-free-code-camp"></i></div>
+                            <div>
+                                <h4>freeCodeCamp Certification</h4>
+                                <p>freeCodeCamp</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/mindluster.png')">
+                            <div class="ach-icon gold"><i class="fas fa-graduation-cap"></i></div>
+                            <div>
+                                <h4>Mindluster Certificate</h4>
+                                <p>Mindluster</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/cert-1b61d85c.png')">
+                            <div class="ach-icon lavender"><i class="fas fa-award"></i></div>
+                            <div>
+                                <h4>Professional Certification</h4>
+                                <p>Certification Authority</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/cert-250ff00d.png')">
+                            <div class="ach-icon rose"><i class="fas fa-medal"></i></div>
+                            <div>
+                                <h4>Technical Certification</h4>
+                                <p>Certification Platform</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/cert-d378a50f.png')">
+                            <div class="ach-icon indigo"><i class="fas fa-star"></i></div>
+                            <div>
+                                <h4>Achievement Certificate</h4>
+                                <p>Certification Body</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                            </div>
+                        </div>
+                        <div class="ach-card clickable" onclick="openCertModal('public/certificates/ecertificate.png')">
+                            <div class="ach-icon orange"><i class="fas fa-scroll"></i></div>
+                            <div>
+                                <h4>eCertificate</h4>
+                                <p>Online Learning Platform</p>
+                                <span class="ach-badge"><i class="fas fa-check-circle"></i> Completed</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ──── EDUCATION ──── -->
+        <section class="app-section" id="education">
+            <div class="app-window" data-reveal>
+                <div class="win-titlebar">
+                    <div class="win-dots"><div class="win-dot red"></div><div class="win-dot yellow"></div><div class="win-dot green"></div></div>
+                    <div class="win-title">education.app — Academic Background</div>
+                </div>
+                <div class="win-body">
+                    <div class="section-label">ACADEMIC JOURNEY</div>
+                    <h2 class="section-heading">My <span>Education</span></h2>
+                    <br />
+                    <div class="edu-timeline">
+                        <div class="edu-card">
+                            <div class="edu-dot active"></div>
+                            <div class="edu-content">
+                                <div class="edu-header">
+                                    <div>
+                                        <h3>Lovely Professional University</h3>
+                                        <p class="edu-degree">Bachelor of Technology — CSE (AI & ML)</p>
+                                    </div>
+                                    <div class="edu-meta-right">
+                                        <span class="edu-location"><i class="fas fa-map-marker-alt"></i> Punjab, India</span>
+                                        <span class="edu-date"><i class="fas fa-calendar"></i> Aug 2023 — Present</span>
+                                    </div>
+                                </div>
+                                <div class="edu-score">CGPA: <strong>7.39</strong></div>
+                            </div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-dot"></div>
+                            <div class="edu-content">
+                                <div class="edu-header">
+                                    <div>
+                                        <h3>Sri Chaitanya Junior College</h3>
+                                        <p class="edu-degree">Intermediate (12th)</p>
+                                    </div>
+                                    <div class="edu-meta-right">
+                                        <span class="edu-location"><i class="fas fa-map-marker-alt"></i> Visakhapatnam, AP</span>
+                                        <span class="edu-date"><i class="fas fa-calendar"></i> Jun 2021 — Mar 2023</span>
+                                    </div>
+                                </div>
+                                <div class="edu-score">Percentage: <strong>92.8%</strong></div>
+                            </div>
+                        </div>
+                        <div class="edu-card">
+                            <div class="edu-dot"></div>
+                            <div class="edu-content">
+                                <div class="edu-header">
+                                    <div>
+                                        <h3>Sri Chaitanya EM High School</h3>
+                                        <p class="edu-degree">Matriculation (10th)</p>
+                                    </div>
+                                    <div class="edu-meta-right">
+                                        <span class="edu-location"><i class="fas fa-map-marker-alt"></i> Visakhapatnam, AP</span>
+                                        <span class="edu-date"><i class="fas fa-calendar"></i> Mar 2021</span>
+                                    </div>
+                                </div>
+                                <div class="edu-score">Percentage: <strong>99%</strong></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Training -->
+                    <div style="margin-top:32px;">
+                        <div class="section-label">TRAINING</div>
+                        <div class="edu-card" style="margin-left:0;padding-left:20px;border-left:none;">
+                            <div class="edu-content">
+                                <div class="edu-header">
+                                    <div>
+                                        <h3>DSA Training in C++</h3>
+                                        <p class="edu-degree">Arrays, Linked Lists, Trees, Hashing, Recursion, Greedy, DP, Graphs</p>
+                                    </div>
+                                    <div class="edu-meta-right">
+                                        <span class="edu-date"><i class="fas fa-calendar"></i> Jun 2025 — Jul 2025</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ──── CONTACT — Enhanced Terminal ──── -->
+        <section class="app-section" id="contact">
+            <div class="app-window terminal-window" data-reveal>
+                <div class="win-titlebar">
+                    <div class="win-dots"><div class="win-dot red"></div><div class="win-dot yellow"></div><div class="win-dot green"></div></div>
+                    <div class="win-title">
+                        <i class="fas fa-terminal" style="margin-right:6px;font-size:.65rem;"></i>
+                        adarsh@portfolio — bash — 80×24
+                    </div>
+                </div>
+                <div class="terminal-body">
+                    <!-- Terminal command history -->
+                    <div class="term-line"><span class="term-prompt">adarsh@portfolio</span><span class="term-colon">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">whoami</span></div>
+                    <div class="term-output">Bandaru Adarsh — AI & ML Enthusiast | Full Stack Developer</div>
+                    <div class="term-line"><span class="term-prompt">adarsh@portfolio</span><span class="term-colon">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">cat contact.json</span></div>
+                    <div class="term-output term-json">
+                        {<br />
+                        &nbsp;&nbsp;"email": "<a href="mailto:adarshbandaru05@gmail.com">adarshbandaru05@gmail.com</a>",<br />
+                        &nbsp;&nbsp;"phone": "+91-8885008708",<br />
+                        &nbsp;&nbsp;"github": "<a href="https://github.com/Adarshbandaru" target="_blank" rel="noopener">github.com/Adarshbandaru</a>",<br />
+                        &nbsp;&nbsp;"linkedin": "<a href="https://www.linkedin.com/in/adarsh-bandaru" target="_blank" rel="noopener">linkedin.com/in/adarsh-bandaru</a>"<br />
+                        }
+                    </div>
+                    <div class="term-line"><span class="term-prompt">adarsh@portfolio</span><span class="term-colon">:</span><span class="term-path">~</span><span class="term-dollar">$</span> <span class="term-cmd">./send_message.sh</span></div>
+                    <div class="term-output" style="color:var(--gold);">⚡ Launching message form...</div>
+                    <br />
+
+                    <div class="contact-layout">
+                        <div>
+                            <div class="contact-links">
+                                <div class="contact-link-card">
+                                    <i class="fas fa-envelope"></i>
+                                    <div><h4>Email</h4><a href="mailto:adarshbandaru05@gmail.com">adarshbandaru05@gmail.com</a></div>
+                                </div>
+                                <div class="contact-link-card">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <div><h4>Phone</h4><a href="tel:+918885008708">+91-8885008708</a></div>
+                                </div>
+                                <div class="contact-link-card">
+                                    <i class="fab fa-github"></i>
+                                    <div><h4>GitHub</h4><a href="https://github.com/Adarshbandaru" target="_blank" rel="noopener">github.com/Adarshbandaru</a></div>
+                                </div>
+                                <div class="contact-link-card">
+                                    <i class="fab fa-linkedin"></i>
+                                    <div><h4>LinkedIn</h4><a href="https://www.linkedin.com/in/adarsh-bandaru" target="_blank" rel="noopener">linkedin.com/in/adarsh-bandaru</a></div>
+                                </div>
+                            </div>
+                            <div class="contact-social">
+                                <a href="https://github.com/Adarshbandaru" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/adarsh-bandaru" target="_blank" rel="noopener" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                                <a href="mailto:adarshbandaru05@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>
+                                <a href="tel:+918885008708" class="social-icon"><i class="fas fa-phone-alt"></i></a>
+                            </div>
+                        </div>
+                        <form class="terminal-form" id="contactForm">
+                            <div class="form-row">
+                                <label for="name">YOUR_NAME</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required />
+                            </div>
+                            <div class="form-row">
+                                <label for="email">YOUR_EMAIL</label>
+                                <input type="email" id="email" name="email" placeholder="john@example.com" required />
+                            </div>
+                            <div class="form-row">
+                                <label for="subject">SUBJECT</label>
+                                <input type="text" id="subject" name="subject" placeholder="Project Collaboration" required />
+                            </div>
+                            <div class="form-row">
+                                <label for="message">MESSAGE</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Tell me about your project..." required></textarea>
+                            </div>
+                            <button type="submit" class="terminal-btn" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> ./send_message.sh
+                            </button>
+                            <div class="form-success" id="formSuccess">
+                                <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="os-footer">
+            <p>© 2026 Bandaru Adarsh · Built with <i class="fas fa-heart" style="color:var(--rose);"></i> and ☕</p>
+            <p style="margin-top:4px;"><a href="https://github.com/Adarshbandaru">github.com/Adarshbandaru</a></p>
+        </footer>
+    </main>
+
+    <!-- ═══════════════ DOCK ═══════════════ -->
+    <nav class="os-dock" id="osDock">
+        <a href="#home" class="dock-item active" data-section="home">
+            <i class="fas fa-home"></i><span class="dock-tooltip">Home</span>
+        </a>
+        <a href="#about" class="dock-item" data-section="about">
+            <i class="fas fa-user"></i><span class="dock-tooltip">About</span>
+        </a>
+        <a href="#skills" class="dock-item" data-section="skills">
+            <i class="fas fa-folder"></i><span class="dock-tooltip">Skills</span>
+        </a>
+        <div class="dock-divider"></div>
+        <a href="#projects" class="dock-item" data-section="projects">
+            <i class="fas fa-code"></i><span class="dock-tooltip">Projects</span>
+        </a>
+        <a href="#achievements" class="dock-item" data-section="achievements">
+            <i class="fas fa-trophy"></i><span class="dock-tooltip">Awards</span>
+        </a>
+        <a href="#education" class="dock-item" data-section="education">
+            <i class="fas fa-graduation-cap"></i><span class="dock-tooltip">Education</span>
+        </a>
+        <div class="dock-divider"></div>
+        <a href="#contact" class="dock-item" data-section="contact">
+            <i class="fas fa-terminal"></i><span class="dock-tooltip">Contact</span>
+        </a>
+        <a href="public/resume.pdf" download="Bandaru_Adarsh_Resume.pdf" class="dock-item">
+            <i class="fas fa-download"></i><span class="dock-tooltip">Resume</span>
+        </a>
+        <div class="dock-divider"></div>
+        <div class="dock-item" id="themeToggle">
+            <i class="fas fa-moon"></i><i class="fas fa-sun"></i>
+            <span class="dock-tooltip">Theme</span>
+        </div>
+    </nav>
+
+    <!-- Certificate Modal -->
+    <div class="cert-modal" id="certModal">
+        <div class="cert-modal-content">
+            <button class="cert-modal-close" onclick="closeCertModal()"><i class="fas fa-times"></i></button>
+            <img src="" id="certModalImg" alt="Certificate Full View" style="display:none" />
+            <iframe src="" id="certModalPdf" style="display:none; width:100%; height:80vh; border:none; border-radius:12px;"></iframe>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
