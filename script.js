@@ -140,7 +140,10 @@ document.addEventListener('keydown', e => {
     }
 });
 
-/* ════════════════════ 9. CONTACT FORM ════════════════════ */
+/* ════════════════════ 9. CONTACT FORM (Web3Forms) ════════════════════ */
+// ⚠️ REPLACE THIS with your real Web3Forms access key from https://web3forms.com
+const WEB3FORMS_KEY = '117c14d4-ed6a-441e-aca9-3f222aba6ab1';
+
 const contactForm = $('#contactForm');
 const submitBtn = $('#submitBtn');
 const formSuccess = $('#formSuccess');
@@ -150,11 +153,35 @@ if (contactForm) {
         e.preventDefault();
         submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Executing...';
         submitBtn.disabled = true;
-        await new Promise(r => setTimeout(r, 1500));
-        submitBtn.innerHTML = '<i class="fas fa-check"></i> Success!';
-        submitBtn.style.background = 'linear-gradient(135deg, #10b981, #38bdf8)';
-        formSuccess.classList.add('show');
-        contactForm.reset();
+
+        try {
+            const formData = new FormData(contactForm);
+            formData.append('access_key', WEB3FORMS_KEY);
+            formData.append('from_name', 'AdarshOS Portfolio');
+            formData.append('subject', formData.get('subject') || 'New Portfolio Message');
+
+            const response = await fetch('https://api.web3forms.com/submit', {
+                method: 'POST',
+                body: formData,
+            });
+
+            const result = await response.json();
+
+            if (result.success) {
+                submitBtn.innerHTML = '<i class="fas fa-check"></i> Sent!';
+                submitBtn.style.background = 'linear-gradient(135deg, #10b981, #38bdf8)';
+                formSuccess.classList.add('show');
+                contactForm.reset();
+            } else {
+                throw new Error(result.message || 'Submission failed');
+            }
+        } catch (err) {
+            submitBtn.innerHTML = '<i class="fas fa-times"></i> Failed!';
+            submitBtn.style.background = 'linear-gradient(135deg, #f43f5e, #ff6b35)';
+            showToast('❌ Could not send message. Please try again.', 'info');
+            console.error('Contact form error:', err);
+        }
+
         setTimeout(() => {
             submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> ./send_message.sh';
             submitBtn.style.background = '';
